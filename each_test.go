@@ -14,4 +14,9 @@ func TestEach(t *testing.T) {
 	Each(b, func(e string) {
 		fmt.Println(e)
 	})
+	Each(b, func(elem string) {
+		fmt.Println(elem)
+	}, func(e error) {
+		fmt.Println(e)
+	})
 }
